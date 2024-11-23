@@ -1,3 +1,11 @@
+#home {
+    background: linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0.5)), url("./assets/Home.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 #mobile-menu-container {
     background: linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.85)), url("./assets/Mobile-Menu.jpg");
     background-attachment: fixed;
@@ -5,3 +13,51 @@
     background-repeat: no-repeat;
     background-position: left;
 }
+
+
+/* Scroll Indicator Styles */
+.scroll-indicator {
+    width: 24px; /* Adjust size as needed */
+    height: 45px; /* Adjust height as needed */
+    margin: 20px;
+    border: 2px solid white; /* Outer border */
+    border-radius: 50px; /* Oval shape */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent; /* Matches your site's background */
+  }
+  
+  .scroll-dot {
+    width: 6px; /* Adjust dot size as needed */
+    height: 6px;
+    background-color: white; /* Inner dot color */
+    border-radius: 50%; /* Circle shape */
+    animation: scroll-animation 5s infinite alternate;
+  }
+  
+  /* Scroll Dot Animation */
+  @keyframes scroll-animation {
+    0% {
+        transform: translateY(-14px); /* Start at the top */
+        opacity: 0; /* Invisible */
+      }
+      25% {
+        transform: translateY(-14px); /* Pause at the top */
+        opacity: 1; /* Fully visible */
+      }
+      50% {
+        transform: translateY(14px); /* Move to the bottom */
+        opacity: 1; /* Fully visible */
+      }
+      75% {
+        transform: translateY(14px); /* Pause at the bottom */
+        opacity: 1; /* Fully visible */
+      }
+      100% {
+        transform: translateY(-14px); /* Move back to the top */
+        opacity: 0; /* Invisible */
+      }
+  }
+  
