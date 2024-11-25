@@ -4,6 +4,7 @@ const mobileMenu = document.getElementById('mobile-menu');
 const mobileMenuContainer = document.getElementById('mobile-menu-container');
 const mobileMenuLinks = document.querySelectorAll('#mobile-menu a');
 const closeMenuByLinks = document.querySelectorAll('.mobile-menu-link');
+const counters = document.querySelectorAll('.counter');
 
 // Function to open mobile menu
 menuBtn.addEventListener('click', () => {
@@ -35,4 +36,41 @@ closeMenuByLinks.forEach((link) => {
             mobileMenuContainer.classList.add('hidden');
         }, 300); // Wait for animation to finish before hiding container
     });
+});
+
+// Stats Counter Section........................
+document.addEventListener("DOMContentLoaded", function () {
+    const counters = document.querySelectorAll('.counter');
+    const speed = 700; // Speed of count-up effect
+
+    const animateCounters = () => {
+        counters.forEach(counter => {
+            const updateCount = () => {
+                const target = +counter.getAttribute('data-target');
+                const count = +counter.innerText;
+
+                const increment = target / speed;
+                if (count < target) {
+                    counter.innerText = Math.ceil(count + increment);
+                    setTimeout(updateCount, 20);
+                } else {
+                    counter.innerText = `${target}+`;
+                }
+            };
+            updateCount();
+        });
+    };
+
+    // Check if section is in view
+    const statsSection = document.getElementById('stats');
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                animateCounters();
+                observer.unobserve(statsSection); // Stop observing once animation starts
+            }
+        });
+    });
+
+    observer.observe(statsSection); // Start observing
 });
