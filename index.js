@@ -3,6 +3,7 @@ const closeMenuBtn = document.getElementById('close-menu-btn');
 const mobileMenu = document.getElementById('mobile-menu');
 const mobileMenuContainer = document.getElementById('mobile-menu-container');
 const mobileMenuLinks = document.querySelectorAll('#mobile-menu a');
+const closeMenuByLinks = document.querySelectorAll('.mobile-menu-link');
 
 // Function to open mobile menu
 menuBtn.addEventListener('click', () => {
@@ -24,4 +25,14 @@ closeMenuBtn.addEventListener('click', () => {
     setTimeout(() => {
         mobileMenuContainer.classList.add('hidden');
     }, 300); // Wait for animation to finish before hiding container
+});
+
+// Function to close mobile menu by clicking on links
+closeMenuByLinks.forEach((link) => {
+    link.addEventListener('click', () => {
+        mobileMenu.classList.add('translate-x-full');
+        setTimeout(() => {
+            mobileMenuContainer.classList.add('hidden');
+        }, 300); // Wait for animation to finish before hiding container
+    });
 });
