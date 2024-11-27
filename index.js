@@ -5,11 +5,13 @@ const mobileMenuContainer = document.getElementById('mobile-menu-container');
 const mobileMenuLinks = document.querySelectorAll('#mobile-menu a');
 const closeMenuByLinks = document.querySelectorAll('.mobile-menu-link');
 const counters = document.querySelectorAll('.counter');
+const body = document.body;
 
 // Function to open mobile menu
 menuBtn.addEventListener('click', () => {
     mobileMenuContainer.classList.remove('hidden');
     mobileMenu.classList.remove('translate-x-full');
+    body.classList.add('overflow-hidden')
     
     // Add animation to menu links
     mobileMenuLinks.forEach((link, index) => {
@@ -23,6 +25,7 @@ menuBtn.addEventListener('click', () => {
 // Function to close mobile menu
 closeMenuBtn.addEventListener('click', () => {
     mobileMenu.classList.add('translate-x-full');
+    body.classList.remove('overflow-hidden')
     setTimeout(() => {
         mobileMenuContainer.classList.add('hidden');
     }, 300); // Wait for animation to finish before hiding container

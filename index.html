@@ -11,15 +11,16 @@
     <title>Web-Wizards</title>
 </head>
 
-<body class="bg-black">
+<body class="bg-black font-mono">
 
-    <header class="lg:sticky top-0 bg-black bg-opacity-50 shadow-lg z-50">
+    <!-- Header -->
+    <header class="lg:sticky top-0 bg-black bg-opacity-100 border-b-2 border-purple-600 shadow-lg font-[cursive] z-50">
         <div class="header flex flex-wrap lg:flex-nowrap items-center justify-between px-6">
 
             <!-- Logo Section -->
             <div class="header-logo flex flex-wrap items-center lg:w-1/3 w-full justify-between lg:justify-start">
                 <div class="flex items-center">
-                    <img src="./assets/Web-Wizards-Logo.png" alt="Web Wizards Logo" class="w-[190px] h-[120px] transition-transform duration-1000 hover:scale-150">
+                    <img src="./assets/Web-Wizards-Logo.png" alt="Web Wizards Logo" class="w-[160px] h-[90px] transition-transform duration-1000 hover:scale-150">
                 </div>
 
                 <!-- Hamburger Menu Icon for Mobile -->
@@ -31,14 +32,14 @@
             </div>
 
             <!-- Navigation Section (hidden on small screens, toggled by the hamburger icon) -->
-            <nav id="menu" class="navbar lg:w-2/3 w-full hidden lg:flex justify-center lg:justify-end mt-2 lg:mt-0">
+            <nav id="menu" class="navbar lg:w-2/3 w-full hidden lg:flex justify-center lg:justify-end lg:mt-0">
                 <ul class="flex lg:gap-12 gap-6 text-white text-lg">
-                    <li><a href="#home" class="hover:text-purple-600 transition duration-300 border-b-2 border-transparent hover:border-purple-600 pb-2">Home</a></li>
-                    <li><a href="#" class="hover:text-purple-600 transition duration-300 border-b-2 border-transparent hover:border-purple-600 pb-2">About Us</a></li>
-                    <li><a href="#" class="hover:text-purple-600 transition duration-300 border-b-2 border-transparent hover:border-purple-600 pb-2">Services</a></li>
-                    <li><a href="#" class="hover:text-purple-600 transition duration-300 border-b-2 border-transparent hover:border-purple-600 pb-2">Portfolio</a></li>
-                    <li><a href="#" class="hover:text-purple-600 transition duration-300 border-b-2 border-transparent hover:border-purple-600 pb-2">Register</a></li>
-                    <li><a href="./contact.html" class="hover:text-purple-600 transition duration-300 border-b-2 border-transparent hover:border-purple-600 pb-2">Contact</a></li>
+                    <li><a href="#home" class="hover:text-purple-600 transition duration-300 border-b-2 border-transparent hover:border-purple-600">Home</a></li>
+                    <li><a href="#" class="hover:text-purple-600 transition duration-300 border-b-2 border-transparent hover:border-purple-600">About Us</a></li>
+                    <li><a href="#" class="hover:text-purple-600 transition duration-300 border-b-2 border-transparent hover:border-purple-600">Services</a></li>
+                    <li><a href="#" class="hover:text-purple-600 transition duration-300 border-b-2 border-transparent hover:border-purple-600">Portfolio</a></li>
+                    <li><a href="#" class="hover:text-purple-600 transition duration-300 border-b-2 border-transparent hover:border-purple-600">Register</a></li>
+                    <li><a href="./contact.html" class="hover:text-purple-600 transition duration-300 border-b-2 border-transparent hover:border-purple-600">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -65,16 +66,17 @@
         </div>
     </header>
 
+    <!-- Home -->
     <section id="home">
         <div class="flex lg:flex-row flex-col justify-between items-center">
             <div>
-                <h1 class="text-gray-400 -rotate-90 italic font-bold lg:flex hidden">Welcome to Web Wizards</h1>
+                <h1 class="text-gray-400 -rotate-90 font-bold lg:flex hidden">Welcome to Web Wizards</h1>
             </div>
             <div>
-                <h1 class="text-gray-300 text-center lg:text-[130px] text-[40px] font-semibold">We Are The <br><span class="lg:text-[130px] text-[42px] text-purple-600 font-bold italic">WEB WIZARDS</span></h1>
+                <h1 class="text-gray-300 text-center font-[cursive] lg:text-[130px] text-[40px] font-semibold">We Are The <br><span class="lg:text-[130px] text-[42px] text-purple-600 font-bold italic">WEB WIZARDS</span></h1>
             </div>
             <div>
-                <h1 class="text-gray-400 -rotate-90 italic font-bold lg:flex hidden">Follow Us - <a href="#" class="hover:text-purple-500">Instagram</a></h1>
+                <h1 class="text-gray-400 -rotate-90 font-bold lg:flex hidden">Follow Us - &emsp13;<a href="#" class="hover:text-purple-500">Instagram</a></h1>
             </div>
         </div>
         <div class="flex justify-center flex-col items-center text-gray-400 text-xl font-semibold">
@@ -85,8 +87,8 @@
         </div>          
     </section>
 
-            <!-- Statistics Section with Enhanced Design and Animated Counters -->
-    <section id="stats" class="w-[80%] my-[10vh] mx-auto rounded-[50px] border border-purple-600 hover:scale-110 transition-scale duration-500">
+    <!-- Statistics Section with Enhanced Design and Animated Counters -->
+    <section id="stats" class="w-[80%] font-[cursive] my-[10vh] mx-auto rounded-[50px] border border-purple-600 hover:scale-110 transition-scale duration-500">
         <div class="container py-2 px-2 lg:px-8 ">
             <div class="flex flex-col lg:flex-row lg:justify-between lg:space-x-8">
 
@@ -120,6 +122,10 @@
 
             </div>
         </div>
+    </section>
+
+    <section id="services">
+        <h1 class="text-purple-500 text-3xl text-center font-[cursive] font-bold italic">Services</h1>
     </section>
 
     <script src="./index.js"></script>
