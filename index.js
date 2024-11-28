@@ -77,3 +77,30 @@ document.addEventListener("DOMContentLoaded", function () {
 
     observer.observe(statsSection); // Start observing
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const buttons = document.querySelectorAll('.content-button');
+    const contents = document.querySelectorAll('.content');
+
+    // Set focus on the first button
+    if (buttons.length > 0) {
+        buttons[0].focus();
+    }
+
+    buttons.forEach(button => {
+        button.addEventListener('click', function() {
+            const target = this.getAttribute('data-content');
+
+            contents.forEach(content => {
+                if (content.id === target) {
+                    content.classList.add('active');
+                    content.classList.remove('hidden');
+                } else {
+                    content.classList.remove('active');
+                    content.classList.add('hidden');
+                }
+            });
+        });
+    });
+});

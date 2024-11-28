@@ -66,3 +66,15 @@
 #stats {
   background:  linear-gradient(to top, rgba(4, 4, 4, 0.9), rgba(20, 20, 20, 0.8));
 }
+
+.content {
+  display: none;
+}
+
+.content.active {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}

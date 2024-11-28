@@ -11,7 +11,7 @@
     <title>Web-Wizards</title>
 </head>
 
-<body class="bg-black font-mono">
+<body class="bg-black">
 
     <!-- Header -->
     <header class="lg:sticky top-0 bg-black bg-opacity-100 border-b-2 border-purple-600 shadow-lg font-[cursive] z-50">
@@ -125,7 +125,73 @@
     </section>
 
     <section id="services">
-        <h1 class="text-purple-500 text-3xl text-center font-[cursive] font-bold italic">Services</h1>
+        <h1 class="text-purple-500 text-[50px] text-center font-[cursive] font-bold italic">Services</h1>
+        <div class="flex lg:flex-row flex-col w-[90%] my-6 mx-auto">
+            <div class="lg:w-[30%] w-[90%] flex flex-col gap-8 my-auto lg:mr-[30px]">
+                <button id="web-dev-svc-btn" title="svc-btn" data-content="content1" class="content-button bg-purple-600 hover:bg-purple-900 hover:text-gray-400 focus:bg-purple-900 focus:text-gray-400 rounded-lg lg:focus:scale-[1.2] transition-scale duration-1000 font-bold text-xl py-[15px] px-[15px] outline-none">Website Design & Development</button>
+
+                <button id="web-redesign-svc-btn" title="svc-btn" data-content="content2" class="content-button bg-purple-600 hover:bg-purple-900 hover:text-gray-400 focus:bg-purple-900 focus:text-gray-400 rounded-lg lg:focus:scale-[1.2] transition-scale duration-1000 font-bold text-xl py-[15px] px-[15px] outline-none">Website Redesign</button>
+
+                <button id="web-maintain-svc-btn" title="svc-btn" data-content="content3" class="content-button bg-purple-600 hover:bg-purple-900 hover:text-gray-400 focus:bg-purple-900 focus:text-gray-400 rounded-lg lg:focus:scale-[1.2] transition-scale duration-1000 font-bold text-xl py-[15px] px-[15px] outline-none">Website Maintenance & Support</button>
+            </div>
+
+            <div class="lg:w-[60%] w-[90%] lg:ml-[60px]">
+                <div id="content1" class="content mx-auto my-4 bg-purple-400 p-4 rounded-lg text-[17px] shadow-purple-600 shadow-lg hover:shadow-xl lg:hover:scale-[1.05] transition-scale duration-1000 active">
+                    <h1 class="text-center font-bold text-2xl font-[cursive] italic pb-4">Website Design & Development</h1>
+                    <p>This service involves building a complete website from scratch or enhancing an existing one. It focuses on creating a visually appealing, functional website that reflects the business's brand.</p>
+                    <h2 class="font-bold text-lg py-2">Key Points:</h2>
+                    <ul class="list-disc px-[30px]">
+                        <li><span class="font-bold">Responsive Design:</span> Ensures the website looks great on any device (desktop, tablet, smartphone).</li>
+                        <li><span class="font-bold">Custom Layouts:</span> Tailor the design to match the client’s brand and audience.</li>
+                        <li><span class="font-bold">User Experience (UX):</span> Make the website easy to navigate, improving overall usability.</li>
+                        <li><span class="font-bold">Modern Technologies:</span> Use HTML, CSS, TailwindCSS, and JavaScript for an optimal user experience.</li>
+                        <li><span class="font-bold">Performance Optimization:</span> Websites are built to load quickly and perform well across devices.</li>
+                    </ul>
+                    <h2 class="font-bold text-lg py-2">Why it matters for businesses:</h2>
+                    <ul class="list-disc px-[30px]">
+                        <li>A well-designed website attracts customers and builds credibility.</li>
+                        <li>A user-friendly experience keeps visitors engaged and encourages conversions (sales, sign-ups, etc.)</li>
+                        <li>Responsive design ensures the website is accessible to all users, regardless of the device they use.</li>
+                    </ul>
+                </div>
+
+                <div id="content2" class="content mx-auto my-4 bg-purple-400 p-4 rounded-lg text-[17px] shadow-purple-600 shadow-lg hover:shadow-xl lg:hover:scale-[1.05] transition-scale duration-1000 hidden">
+                    <h1 class="text-center font-bold text-2xl font-[cursive] italic pb-4">Website Redesign</h1>
+                    <p>This service involves updating or completely changing an existing website. It’s ideal for businesses whose current website may be outdated or not performing well.</p>
+                    <h2 class="font-bold text-lg py-2">Key Points:</h2>
+                    <ul class="list-disc px-[30px]">
+                        <li><span class="font-bold">Modernize the Design:</span> Update old designs to look fresh and professional.</li>
+                        <li><span class="font-bold">Improve User Experience:</span> Revamp navigation and layout for easier interaction.</li>
+                        <li><span class="font-bold">Mobile Optimization:</span> Ensure that the website works flawlessly on all screen sizes.</li>
+                        <li><span class="font-bold">Better Speed & Performance:</span> Optimize the code for faster loading times.</li>
+                    </ul>
+                    <h2 class="font-bold text-lg py-2">Why it matters for businesses:</h2>
+                    <ul class="list-disc px-[30px]">
+                        <li>An updated design can attract more visitors and improve engagement.</li>
+                        <li>Redesigning a website improves its functionality and keeps the business competitive.</li>
+                        <li>Mobile optimization ensures that the website is accessible to all users.</li>
+                    </ul>
+                </div>
+
+                <div id="content3" class="content mx-auto my-4 bg-purple-400 p-4 rounded-lg text-[17px] shadow-purple-600 shadow-lg hover:shadow-xl lg:hover:scale-[1.05] transition-scale duration-1000 hidden">
+                    <h1 class="text-center font-bold text-2xl font-[cursive] italic pb-4">Website Maintenance & Support</h1>
+                    <p>This service provides ongoing updates, bug fixes, and support for websites after they’ve been launched. It ensures that the website stays current, secure, and functional.</p>
+                    <h2 class="font-bold text-lg py-2">Key Points:</h2>
+                    <ul class="list-disc px-[30px]">
+                        <li><span class="font-bold">Regular Updates:</span> Keep the website’s software, plugins, and security patches up to date.</li>
+                        <li><span class="font-bold">Bug Fixes:</span> Identify and fix any issues, such as broken links, slow pages, or compatibility problems.</li>
+                        <li><span class="font-bold">Content Updates:</span> Make periodic content changes, such as adding blog posts, updating product listings, etc.</li>
+                        <li><span class="font-bold">Security Monitoring:</span> Protect the website from security threats by ensuring it’s protected against hacks, data breaches, and malware.</li>
+                    </ul>
+                    <h2 class="font-bold text-lg py-2">Why it matters for businesses:</h2>
+                    <ul class="list-disc px-[30px]">
+                        <li>Ongoing maintenance ensures that the website continues to run smoothly and securely.</li>
+                        <li>Regular updates keep the website fresh and relevant, which can improve search rankings and user engagement.</li>
+                        <li>Security monitoring protects the website and its visitors from potential threats.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
 
     <script src="./index.js"></script>
