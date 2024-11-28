@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
     observer.observe(statsSection); // Start observing
 });
 
-
+// Function to Display Which Service Details On Click of Button
 document.addEventListener('DOMContentLoaded', function() {
     const buttons = document.querySelectorAll('.content-button');
     const contents = document.querySelectorAll('.content');
