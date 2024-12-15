@@ -35,6 +35,7 @@ closeMenuBtn.addEventListener('click', () => {
 closeMenuByLinks.forEach((link) => {
     link.addEventListener('click', () => {
         mobileMenu.classList.add('translate-x-full');
+        body.classList.remove('overflow-hidden')
         setTimeout(() => {
             mobileMenuContainer.classList.add('hidden');
         }, 300); // Wait for animation to finish before hiding container

@@ -36,9 +36,8 @@
                 <ul class="flex lg:gap-12 gap-6 text-white text-lg">
                     <li><a href="#home" class="hover:text-purple-600 transition duration-300 border-b-2 border-transparent hover:border-purple-600">Home</a></li>
                     <li><a href="#services" class="hover:text-purple-600 transition duration-300 border-b-2 border-transparent hover:border-purple-600">Services</a></li>
-                    <li><a href="#" class="hover:text-purple-600 transition duration-300 border-b-2 border-transparent hover:border-purple-600">About Us</a></li>
-                    <li><a href="#" class="hover:text-purple-600 transition duration-300 border-b-2 border-transparent hover:border-purple-600">Portfolio</a></li>
-                    <li><a href="#" class="hover:text-purple-600 transition duration-300 border-b-2 border-transparent hover:border-purple-600">Register</a></li>
+                    <li><a href="#about" class="hover:text-purple-600 transition duration-300 border-b-2 border-transparent hover:border-purple-600">About Us</a></li>
+                    <li><a href="#portfolio" class="hover:text-purple-600 transition duration-300 border-b-2 border-transparent hover:border-purple-600">Portfolio</a></li>
                     <li><a href="./contact.html" class="hover:text-purple-600 transition duration-300 border-b-2 border-transparent hover:border-purple-600">Contact</a></li>
                 </ul>
             </nav>
@@ -56,10 +55,9 @@
                 </div>
                 <ul class="flex flex-col items-start gap-[20px] text-white text-lg px-6 py-4">
                     <li><a href="#home" class="hover:text-purple-600 transition duration-300 opacity-0 translate-x-4 mobile-menu-link">Home</a></li>
-                    <li><a href="#" class="hover:text-purple-600 transition duration-300 opacity-0 translate-x-4 mobile-menu-link">About Us</a></li>
-                    <li><a href="#" class="hover:text-purple-600 transition duration-300 opacity-0 translate-x-4 mobile-menu-link">Services</a></li>
-                    <li><a href="#" class="hover:text-purple-600 transition duration-300 opacity-0 translate-x-4 mobile-menu-link">Portfolio</a></li>
-                    <li><a href="./register.html" class="hover:text-purple-600 transition duration-300 opacity-0 translate-x-4 mobile-menu-link">Register</a></li>
+                    <li><a href="#about" class="hover:text-purple-600 transition duration-300 opacity-0 translate-x-4 mobile-menu-link">About Us</a></li>
+                    <li><a href="#services" class="hover:text-purple-600 transition duration-300 opacity-0 translate-x-4 mobile-menu-link">Services</a></li>
+                    <li><a href="#portfolio" class="hover:text-purple-600 transition duration-300 opacity-0 translate-x-4 mobile-menu-link">Portfolio</a></li>
                     <li><a href="./contact.html" class="hover:text-purple-600 transition duration-300 opacity-0 translate-x-4 mobile-menu-link">Contact</a></li>
                 </ul>
             </nav>
@@ -129,7 +127,7 @@
         <h1 class="text-purple-500 text-[50px] text-center font-[cursive] font-bold italic">Services</h1>
 
         <div class="flex lg:flex-row flex-col w-[90%] my-6 mx-auto">
-            <div class="lg:w-[30%] w-[90%] flex flex-col gap-8 my-auto lg:mr-[30px]">
+            <div class="lg:w-[30%] w-[100%] flex flex-col gap-8 my-auto lg:mr-[30px]">
 
                 <h2 class="text-purple-400 text-center text-2xl font-bold">What Services We Provide</h2>
                 <p class="text-center text-gray-400 text-lg">We offer a range of services to help businesses create, redesign, and maintain their websites. Our services are designed to meet the unique needs of each client, ensuring that their website is visually appealing, functional, and user-friendly.</p>
@@ -141,7 +139,7 @@
                 <button id="web-maintain-svc-btn" title="svc-btn" data-content="content3" class="content-button bg-purple-600 hover:bg-purple-900 hover:text-gray-400 focus:bg-purple-900 focus:text-gray-400 rounded-lg lg:focus:scale-[1.2] transition-scale duration-1000 font-bold text-xl py-[15px] px-[15px] outline-none">Website Maintenance & Support</button>
             </div>
 
-            <div class="lg:w-[60%] w-[90%] lg:ml-[60px]">
+            <div class="lg:w-[60%] w-[100%] lg:ml-[60px]">
                 <div id="content1" class="content mx-auto my-4 bg-purple-400 p-4 rounded-lg text-[17px] shadow-purple-600 shadow-lg hover:shadow-xl lg:hover:scale-[1.05] transition-scale duration-1000 active">
                     <h1 class="text-center font-bold text-2xl font-[cursive] italic pb-4">Website Design & Development</h1>
                     <p>This service involves building a complete website from scratch or enhancing an existing one. It focuses on creating a visually appealing, functional website that reflects the business's brand.</p>
@@ -200,10 +198,40 @@
         </div>
     </section>
 
-    <!-- Loader Animations For Design -->
-    <div class="loader lg:flex hidden -mx-[60px]"></div>
-    <div class="loader lg:flex hidden w-[250px] h-[250px] mx-[300px] my-[80px]"></div>
-    
+    <!-- About Section -->
+    <section id="about">
+        <h1 class="text-purple-500 text-[40px] text-center font-[cursive] font-bold italic my-[4vh]">About Us</h1>
+        <div class="flex lg:flex-row flex-col-reverse justify-between items-center w-[90%] mx-auto">
+
+            <div class="lg:w-[40%] w-[100%]">
+                <div class="loader lg:flex hidden -mx-[160px] -my-[30px] animate-bounce"></div>
+
+                <div>
+                    <h2 class="text-gray-500 lg:text-[30px] text-[26px] font-semibold font-sans mb-6"><span class="text-purple-600 font-[cursive] font-bold italic">WEB WIZARDS</span> is one of the best Web Development Agencies with a World Wide Reach</h2>
+                    <div class="learn-about-btn relative group inline-block mx-4 my-6 lg:my-0">
+                        <p class="text-lg text-gray-400 font-semibold hover:text-purple-500 transition-all duration-800 ease-in-out"><a href="./about.html">Learn More <i class="fa-solid fa-arrow-right-long mx-2"></i></a></p>
+                        <div class="absolute left-0 bottom-0 h-[2px] w-0 bg-purple-500 transition-all duration-500 ease-in-out group-hover:w-[80%]"></div>
+                    </div>
+                </div>
+                
+                <div class="loader lg:flex hidden w-[250px] h-[250px] mx-[200px] my-[60px] animate-bounce duration-800"></div>
+            </div>
+            
+            <!-- Video for About Us -->
+            <div class="relative mb-8 lg:mb-0">
+                <img src="./assets/Web-Wizards-Logo-2.png" alt="Web Wizards About Video" class="w-full h-auto object-cover rounded-lg shadow-lg">
+                <!-- Red Play Icon Overlay -->
+                <a target="_blank" href="./assets/Web-Wizards-About-Vid.mp4" class="absolute inset-0 flex items-center justify-center">
+                    <div class="button flex justify-center items-center h-[80px] w-[80px] rounded-full text-purple-700 bg-black border-2 border-purple-700">
+                        <i class="fas fa-play fa-2x"></i> <!-- FontAwesome play icon -->
+                    </div>
+                    <p class="hidden">Play video</p>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
     <script src="./index.js"></script>
 </body>
 </html>

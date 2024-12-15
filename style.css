@@ -119,3 +119,20 @@
     transform: rotate(360deg);
   }
 }
+
+/* Play About Us Video Button */
+.button {
+  transition: all 0.5s ease-in-out 0s;
+  box-shadow: rgba(99, 99, 99, 0.698) 0px 0px 0px 0px;
+  animation: 2s cubic-bezier(0.8, 0, 0, 1) 1s infinite normal none running pulse;
+}
+
+.button:is(:hover, :focus) {
+  transform: scale(1.2);
+}
+
+@keyframes pulse {
+  100% {
+    box-shadow: 0 0 0 25px rgba(193,244,246,0);
+  }
+}
