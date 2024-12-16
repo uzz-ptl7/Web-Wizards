@@ -136,3 +136,12 @@
     box-shadow: 0 0 0 25px rgba(193,244,246,0);
   }
 }
+
+/* ..........................About Page Intro Background */
+#aboutpageintro {
+  background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.7)), url("./assets/About-Home.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
