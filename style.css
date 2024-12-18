@@ -154,18 +154,3 @@
   background-repeat: no-repeat;
   background-position: center;
 }
-
-
-/* Portfolio Section Cards */
-.book {
-  perspective: 2000px;
-}
-
-.cover {
-  transform-origin: left;
-  transition: transform 0.5s ease, box-shadow 0.5s ease;
-}
-
-.book:hover .cover {
-  transform: rotateY(-80deg);
-}
